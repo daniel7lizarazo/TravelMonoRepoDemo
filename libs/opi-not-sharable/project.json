@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/opi-not-sharable",
+  "sourceRoot": "libs/opi-not-sharable/src",
+  "prefix": "opi-travel-demo",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/opi-not-sharable"],
+      "options": {
+        "jestConfig": "libs/opi-not-sharable/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/opi-not-sharable/src/**/*.ts",
+          "libs/opi-not-sharable/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

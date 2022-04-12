@@ -1,0 +1,30 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@opi-travel-demo/opi-not-sharable": [
+        "libs/opi-not-sharable/src/index.ts"
+      ],
+      "@opi-travel-demo/opi-travel-domain": [
+        "libs/opi-travel-domain/src/index.ts"
+      ],
+      "@opi-travel-demo/opi-travel-sharable": [
+        "libs/opi-travel-sharable/src/index.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

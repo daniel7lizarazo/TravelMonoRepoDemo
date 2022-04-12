@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/opi-travel-domain",
+  "sourceRoot": "libs/opi-travel-domain/src",
+  "prefix": "opi-travel-demo",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/opi-travel-domain"],
+      "options": {
+        "jestConfig": "libs/opi-travel-domain/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/opi-travel-domain/src/**/*.ts",
+          "libs/opi-travel-domain/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

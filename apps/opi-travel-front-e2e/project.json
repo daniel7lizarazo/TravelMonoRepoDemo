@@ -1,0 +1,28 @@
+{
+  "root": "apps/opi-travel-front-e2e",
+  "sourceRoot": "apps/opi-travel-front-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/opi-travel-front-e2e/cypress.json",
+        "devServerTarget": "opi-travel-front:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "opi-travel-front:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/opi-travel-front-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["opi-travel-front"]
+}

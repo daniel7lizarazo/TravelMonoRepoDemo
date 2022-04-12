@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "projects": {
+    "opi-not-sharable": "libs/opi-not-sharable",
+    "opi-travel-domain": "libs/opi-travel-domain",
+    "opi-travel-front": "apps/opi-travel-front",
+    "opi-travel-front-e2e": "apps/opi-travel-front-e2e",
+    "opi-travel-sharable": "libs/opi-travel-sharable"
+  }
+}

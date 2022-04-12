@@ -1,0 +1,94 @@
+{
+  "projectType": "application",
+  "root": "apps/opi-travel-front",
+  "sourceRoot": "apps/opi-travel-front/src",
+  "prefix": "opi-travel-demo",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/opi-travel-front",
+        "index": "apps/opi-travel-front/src/index.html",
+        "main": "apps/opi-travel-front/src/main.ts",
+        "polyfills": "apps/opi-travel-front/src/polyfills.ts",
+        "tsConfig": "apps/opi-travel-front/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          "apps/opi-travel-front/src/favicon.ico",
+          "apps/opi-travel-front/src/assets"
+        ],
+        "styles": ["apps/opi-travel-front/src/styles.scss"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/opi-travel-front/src/environments/environment.ts",
+              "with": "apps/opi-travel-front/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "opi-travel-front:build:production"
+        },
+        "development": {
+          "browserTarget": "opi-travel-front:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "opi-travel-front:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/opi-travel-front/src/**/*.ts",
+          "apps/opi-travel-front/src/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/opi-travel-front"],
+      "options": {
+        "jestConfig": "apps/opi-travel-front/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

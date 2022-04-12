@@ -1,0 +1,25 @@
+$primaryColor: #8E44AD;
+$primaryColorLight: #BB8FCE;
+$secondaryColor: #E67E22;
+$secondaryColorLight: #FDEBD0;
+$primaryFontColor: #17202A;
+$secondaryFontColor: #FDFEFE;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: $primaryFontColor;
+}
+
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+.title {
+    margin-top: 2em;
+    text-align: center;
+}
