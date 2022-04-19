@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'opi-travel-demo-search-bar-from-lib',
@@ -6,9 +6,14 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./search-bar-from-lib.component.scss'],
 })
 
-@Input()
 
 export class SearchBarFromLibComponent {
-  constructor() {}
+
+  @Output()
+  searchEntry = new EventEmitter<string>();
+
+  search(entry : string){
+    this.searchEntry.emit(entry);
+  }
 
 }

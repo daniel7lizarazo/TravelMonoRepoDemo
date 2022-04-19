@@ -1,12 +1,12 @@
-<form class="search">
+<div class="search">
     <h3 class="search__title">Sección de búsqueda</h3>
     <div class="search__body">
         <div class="search__input">
             <label for="configurationName"></label>
-            <input name="configurationName" placeholder="Ingrese el nombre de la configuración" type="text">
+            <input #searchEntry name="configurationName" placeholder="Ingrese el nombre de la configuración" type="text">
         </div>
         <div class="search__button">
-            <button>Buscar</button>
+            <button (click)="search(searchEntry.value)">Buscar</button>
         </div>
     </div>
-</form>
+  </div>

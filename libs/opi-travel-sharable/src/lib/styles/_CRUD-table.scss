@@ -30,4 +30,7 @@
 .CRUD-table tr:nth-child(even) {
     background-color: $secondaryColorLight;
 }
+.CRUD-table tr:nth-child(odd) {
+    background-color: $primaryColorLight;
+}
 

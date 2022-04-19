@@ -1,3 +1,13 @@
-<!-- <opi-travel-demo-nx-welcome></opi-travel-demo-nx-welcome> -->
-<opi-travel-demo-search-bar-from-lib></opi-travel-demo-search-bar-from-lib>
-<opi-travel-demo-crud-table-from-lib></opi-travel-demo-crud-table-from-lib>
+  <opi-travel-demo-search-bar-from-lib
+    (searchEntry)="findConfiguration($event)">
+  </opi-travel-demo-search-bar-from-lib>
+
+<!-- <ng-container *ng-if="tableData$ | async as tabDat">
+  <opi-travel-demo-crud-table-from-lib
+  [tableData]="tabDat">
+  </opi-travel-demo-crud-table-from-lib>
+</ng-container> -->
+
+  <opi-travel-demo-crud-table-from-lib
+    [tableData]="tableData$">
+  </opi-travel-demo-crud-table-from-lib>

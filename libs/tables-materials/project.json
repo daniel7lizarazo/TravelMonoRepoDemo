@@ -1,16 +1,16 @@
 {
   "projectType": "library",
-  "root": "libs/opi-travel-sharable",
-  "sourceRoot": "libs/opi-travel-sharable/src",
+  "root": "libs/tables-materials",
+  "sourceRoot": "libs/tables-materials/src",
   "prefix": "opi-travel-demo",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": [
-        "coverage/libs/opi-travel-sharable"
+        "coverage/libs/tables-materials"
       ],
       "options": {
-        "jestConfig": "libs/opi-travel-sharable/jest.config.js",
+        "jestConfig": "libs/tables-materials/jest.config.js",
         "passWithNoTests": true
       }
     },
@@ -18,8 +18,8 @@
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "libs/opi-travel-sharable/src/**/*.ts",
-          "libs/opi-travel-sharable/src/**/*.html"
+          "libs/tables-materials/src/**/*.ts",
+          "libs/tables-materials/src/**/*.html"
         ]
       }
     }

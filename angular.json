@@ -5,6 +5,7 @@
     "opi-travel-domain": "libs/opi-travel-domain",
     "opi-travel-front": "apps/opi-travel-front",
     "opi-travel-front-e2e": "apps/opi-travel-front-e2e",
-    "opi-travel-sharable": "libs/opi-travel-sharable"
+    "opi-travel-sharable": "libs/opi-travel-sharable",
+    "tables-materials": "libs/tables-materials"
   }
 }

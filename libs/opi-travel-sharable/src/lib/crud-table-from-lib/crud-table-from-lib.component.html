@@ -4,32 +4,13 @@
     <th>Valor</th>
     <th>Opciones</th>
   </tr>
-  <tr>
-    <td>Inactividad de sesión OPI</td>
-    <td>15 minutos</td>
+  <tr *ngFor="let configuration of tableData">
+    <td>{{configuration.configurationName}}</td>
+    <td>{{configuration.value}}</td>
     <td>
-      <button>Editar</button>
-    </td>
-  </tr>
-  <tr>
-    <td>Inactividad de sesión OPI</td>
-    <td>15 minutos</td>
-    <td>
-      <button>Editar</button>
-    </td>
-  </tr>
-  <tr>
-    <td>Inactividad de sesión OPI</td>
-    <td>15 minutos</td>
-    <td>
-      <button>Editar</button>
-    </td>
-  </tr>
-  <tr>
-    <td>Inactividad de sesión OPI</td>
-    <td>15 minutos</td>
-    <td>
-      <button>Editar</button>
+      <button [hidden]="!configuration.actions.edit">Editar</button>
+      <button [hidden]="!configuration.actions.delete">Eliminar</button>
+      <button [hidden]="!configuration.actions.view">Ver</button>
     </td>
   </tr>
 </table>

@@ -6,7 +6,9 @@
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/opi-travel-domain"],
+      "outputs": [
+        "coverage/libs/opi-travel-domain"
+      ],
       "options": {
         "jestConfig": "libs/opi-travel-domain/jest.config.js",
         "passWithNoTests": true

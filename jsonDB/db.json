@@ -1,0 +1,9 @@
+{
+  "configName":"Daniel",
+  "value":"Mil",
+  "actions":{
+    "edit":true,
+    "delete":true,
+    "vie":true
+  }
+}

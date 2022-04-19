@@ -23,6 +23,9 @@
       ],
       "@opi-travel-demo/opi-travel-sharable": [
         "libs/opi-travel-sharable/src/index.ts"
+      ],
+      "@opi-travel-demo/tables-materials": [
+        "libs/tables-materials/src/index.ts"
       ]
     }
   },
