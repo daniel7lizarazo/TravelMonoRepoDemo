@@ -3,9 +3,14 @@
 @import 'libs/opi-travel-sharable/src/lib/styles/setup.scss';
 $bodyBackgroundColor: #F9E79F;
 
+body{
+  background-color: #F9E79F;
+  margin: 0;
+  // padding:  1rem 1rem 1rem 1rem;
+  // height: 100vh;
+  // width: 100%;
+}
+
 html{
-  background-color: $bodyBackgroundColor;
-  padding:  1rem 1rem 1rem 1rem;
-  height: 100vh;
-  width: 100%;
+  padding: 0;
 }

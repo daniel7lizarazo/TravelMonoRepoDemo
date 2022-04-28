@@ -11,6 +11,7 @@ import { Observable } from 'rxjs/internal/Observable';
 
 export class AppComponent implements OnInit{
 
+  isPusheado$ = false;
   tableData$ : Array<IConfigurationAccounts> = [];
 
   constructor(private readonly dataService: TableDataService) {
@@ -26,5 +27,10 @@ export class AppComponent implements OnInit{
   async findConfiguration(entry : string) : Promise<void> {
     this.tableData$ = await this.dataService.getSpecificData(entry);
   }
+
+  // async pushInfoInDB() : Promise<boolean> {
+  //   this.isPusheado$ = await this.dataService.pushData('Primera prueba');
+  //   return this.isPusheado$;
+  // }
 
 }

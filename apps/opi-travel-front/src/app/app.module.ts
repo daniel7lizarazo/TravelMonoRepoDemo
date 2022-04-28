@@ -7,6 +7,7 @@ import { OpiTravelSharableModule } from '@opi-travel-demo/opi-travel-sharable'
 import { TableDataService } from './services/table-data.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
   imports: [BrowserModule, OpiTravelSharableModule, BrowserAnimationsModule],

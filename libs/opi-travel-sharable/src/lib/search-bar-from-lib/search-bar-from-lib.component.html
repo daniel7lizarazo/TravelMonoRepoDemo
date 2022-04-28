@@ -1,12 +1,12 @@
-<div class="search">
+<mat-form-field class="search">
     <h3 class="search__title">Sección de búsqueda</h3>
     <div class="search__body">
         <div class="search__input">
-            <label for="configurationName"></label>
-            <input #searchEntry name="configurationName" placeholder="Ingrese el nombre de la configuración" type="text">
+            <mat-label for="configurationName"></mat-label>
+            <input matInput #searchEntry name="configurationName" placeholder="Ingrese el nombre de la configuración" type="text">
         </div>
         <div class="search__button">
             <button (click)="search(searchEntry.value)">Buscar</button>
         </div>
     </div>
-  </div>
+  </mat-form-field>

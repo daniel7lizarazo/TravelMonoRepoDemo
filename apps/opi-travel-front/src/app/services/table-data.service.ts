@@ -9,6 +9,8 @@ import { fromEvent } from 'rxjs';
 })
 export class TableDataService {
 
+  // db = new JsonDB(new Config("db", true, false, '/'));
+
   dataForTables : Array<IConfigurationAccounts> = [
       {
         configurationName: 'Login',
@@ -48,7 +50,6 @@ export class TableDataService {
         }
       }
     ]
-// db = new JsonDB(new Config("db", true, false, '/'));
 
   getData(): Promise<Array<IConfigurationAccounts>> {
     return Promise.resolve(this.dataForTables)
@@ -57,4 +58,15 @@ export class TableDataService {
   getSpecificData(searchedName : string): Promise<Array<IConfigurationAccounts>> {
     return Promise.resolve(this.dataForTables.filter( fromTable => fromTable.configurationName === searchedName) ?? this.dataForTables);
   }
+
+  // async pushData(data : string): Promise<boolean> {
+  //   try{
+  //     await this.db.push("/test1", data);
+  //     return true;
+  //   }
+  //   catch{
+  //     return false;
+  //   }
+  // }
+
 }
